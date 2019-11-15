@@ -18,14 +18,19 @@ header {
 }
 
 .logo {
-  padding: 24px;
+  color: white;
+  padding: 8px;
   font-weight: 900;
   font-size: 24px;
-  background-color: pink;
+  background: linear-gradient(
+    to bottom,
+    #ff416c,
+    #ff4b2b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .search {
-  background-color: var(--dark);
+  background-color: transparent;
   flex: 1;
   border-radius: 4px;
   display: flex;
@@ -34,24 +39,18 @@ header {
   padding-right: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .search {
-    background-color: var(--light);
-  }
-}
-
 .search input {
   color: var(--light);
   font-size: 24px;
   border: 0;
   width: 100%;
-  padding: 8px 16px;
+  padding: 4px 16px;
   background-color: transparent;
   outline: none;
 }
 
 @media (prefers-color-scheme: dark) {
-  .search input{
+  .search input {
     color: var(--dark);
   }
 }
@@ -59,10 +58,13 @@ header {
 .search svg {
   width: 32px;
   height: 32px;
+  display: flex;
+  align-self: baseline;
 }
 
 .loader {
   padding: 24px;
+  font-size: 24px;
 }
 
 .grid {
