@@ -61,7 +61,7 @@ function App() {
           </svg>
           <input
             name="search"
-            autofocus
+            autoFocus
             placeholder="search gifs.."
             defaultValue={query}
             onKeyDown={event => {
