@@ -12,7 +12,7 @@
   position: relative;
   text-align: center;
   flex-direction: column;
-  top: 40%;
+  top: 20%;
   display: flex;
   align-items: center;
   transition: top 0.2s ease-in-out;
@@ -47,6 +47,7 @@
 .app .content .search input:focus {
   box-shadow: 0 9px 20px rgba(0, 0, 0, 0.3);
 }
+
 .app .content .search button {
   background: transparent;
   position: absolute;
@@ -55,6 +56,7 @@
   cursor: pointer;
   outline: 0;
 }
+
 .app .content .search button svg {
   fill: var(--dark);
   height: 32px;
