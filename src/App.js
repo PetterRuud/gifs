@@ -4,7 +4,7 @@ import "./App.css";
 
 const LIMIT = 30;
 
-function App() {
+const App = () => {
   const [isStart, setStart] = useState(true);
   const [isLoading, setLoading] = useState(false);
   const [isShowMore, setShowMore] = useState(false);
@@ -109,6 +109,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;
