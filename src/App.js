@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./App.css";
 
-const LIMIT = 30;
+const LIMIT = 40;
 
 const App = () => {
   const [isStart, setStart] = useState(true);
